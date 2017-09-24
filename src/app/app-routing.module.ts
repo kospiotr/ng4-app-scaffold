@@ -1,10 +1,9 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import {NgModule} from "@angular/core";
+import {Routes, RouterModule} from "@angular/router";
 
 const routes: Routes = [
   {
-    path: '',
-    children: []
+    path: '', redirectTo: '/homepage', pathMatch: 'full'
   }
 ];
 
@@ -13,4 +12,5 @@ const routes: Routes = [
   exports: [RouterModule],
   providers: []
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}
